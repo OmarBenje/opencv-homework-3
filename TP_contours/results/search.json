@@ -1,0 +1,758 @@
+[
+  {
+    "parameters": {
+      "detector": "sobel",
+      "sigma": 0,
+      "kernel": 3,
+      "threshold": 10
+    },
+    "P_tuning": 0.02314085047,
+    "csv": "results/search/sobel_00/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "sobel",
+      "sigma": 0,
+      "kernel": 3,
+      "threshold": 20
+    },
+    "P_tuning": 0.027665860506999998,
+    "csv": "results/search/sobel_01/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "sobel",
+      "sigma": 0,
+      "kernel": 3,
+      "threshold": 40
+    },
+    "P_tuning": 0.039975840978,
+    "csv": "results/search/sobel_02/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "sobel",
+      "sigma": 0,
+      "kernel": 3,
+      "threshold": 80
+    },
+    "P_tuning": 0.073098316482,
+    "csv": "results/search/sobel_03/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "sobel",
+      "sigma": 0,
+      "kernel": 3,
+      "threshold": 120
+    },
+    "P_tuning": 0.117792358863,
+    "csv": "results/search/sobel_04/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "sobel",
+      "sigma": 0,
+      "kernel": 3,
+      "threshold": 160
+    },
+    "P_tuning": 0.166291404443,
+    "csv": "results/search/sobel_05/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "sobel",
+      "sigma": 1,
+      "kernel": 3,
+      "threshold": 10
+    },
+    "P_tuning": 0.024969899204,
+    "csv": "results/search/sobel_06/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "sobel",
+      "sigma": 1,
+      "kernel": 3,
+      "threshold": 20
+    },
+    "P_tuning": 0.033449851929,
+    "csv": "results/search/sobel_07/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "sobel",
+      "sigma": 1,
+      "kernel": 3,
+      "threshold": 40
+    },
+    "P_tuning": 0.058735779205,
+    "csv": "results/search/sobel_08/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "sobel",
+      "sigma": 1,
+      "kernel": 3,
+      "threshold": 80
+    },
+    "P_tuning": 0.130475768907,
+    "csv": "results/search/sobel_09/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "sobel",
+      "sigma": 1,
+      "kernel": 3,
+      "threshold": 120
+    },
+    "P_tuning": 0.200620540374,
+    "csv": "results/search/sobel_10/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "sobel",
+      "sigma": 1,
+      "kernel": 3,
+      "threshold": 160
+    },
+    "P_tuning": 0.22170390673999998,
+    "csv": "results/search/sobel_11/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "sobel",
+      "sigma": 2,
+      "kernel": 3,
+      "threshold": 10
+    },
+    "P_tuning": 0.028951845705,
+    "csv": "results/search/sobel_12/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "sobel",
+      "sigma": 2,
+      "kernel": 3,
+      "threshold": 20
+    },
+    "P_tuning": 0.046960405454,
+    "csv": "results/search/sobel_13/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "sobel",
+      "sigma": 2,
+      "kernel": 3,
+      "threshold": 40
+    },
+    "P_tuning": 0.098058054853,
+    "csv": "results/search/sobel_14/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "sobel",
+      "sigma": 2,
+      "kernel": 3,
+      "threshold": 80
+    },
+    "P_tuning": 0.18204570239,
+    "csv": "results/search/sobel_15/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "sobel",
+      "sigma": 2,
+      "kernel": 3,
+      "threshold": 120
+    },
+    "P_tuning": 0.145715004967,
+    "csv": "results/search/sobel_16/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "sobel",
+      "sigma": 2,
+      "kernel": 3,
+      "threshold": 160
+    },
+    "P_tuning": 0.0844221589676,
+    "csv": "results/search/sobel_17/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "laplace",
+      "sigma": 0,
+      "kernel": 3,
+      "threshold": 5
+    },
+    "P_tuning": 0.023250985864,
+    "csv": "results/search/laplace_00/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "laplace",
+      "sigma": 0,
+      "kernel": 3,
+      "threshold": 10
+    },
+    "P_tuning": 0.027209272128,
+    "csv": "results/search/laplace_01/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "laplace",
+      "sigma": 0,
+      "kernel": 3,
+      "threshold": 20
+    },
+    "P_tuning": 0.034867449071,
+    "csv": "results/search/laplace_02/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "laplace",
+      "sigma": 0,
+      "kernel": 3,
+      "threshold": 40
+    },
+    "P_tuning": 0.05182834167,
+    "csv": "results/search/laplace_03/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "laplace",
+      "sigma": 0,
+      "kernel": 3,
+      "threshold": 80
+    },
+    "P_tuning": 0.088541649507,
+    "csv": "results/search/laplace_04/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "laplace",
+      "sigma": 0,
+      "kernel": 3,
+      "threshold": 120
+    },
+    "P_tuning": 0.118965043292,
+    "csv": "results/search/laplace_05/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "laplace",
+      "sigma": 1,
+      "kernel": 3,
+      "threshold": 5
+    },
+    "P_tuning": 0.030493592768,
+    "csv": "results/search/laplace_06/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "laplace",
+      "sigma": 1,
+      "kernel": 3,
+      "threshold": 10
+    },
+    "P_tuning": 0.045620661331,
+    "csv": "results/search/laplace_07/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "laplace",
+      "sigma": 1,
+      "kernel": 3,
+      "threshold": 20
+    },
+    "P_tuning": 0.073258336242,
+    "csv": "results/search/laplace_08/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "laplace",
+      "sigma": 1,
+      "kernel": 3,
+      "threshold": 40
+    },
+    "P_tuning": 0.13138141236700002,
+    "csv": "results/search/laplace_09/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "laplace",
+      "sigma": 1,
+      "kernel": 3,
+      "threshold": 80
+    },
+    "P_tuning": 0.141627266385,
+    "csv": "results/search/laplace_10/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "laplace",
+      "sigma": 1,
+      "kernel": 3,
+      "threshold": 120
+    },
+    "P_tuning": 0.050506578041,
+    "csv": "results/search/laplace_11/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "laplace",
+      "sigma": 2,
+      "kernel": 3,
+      "threshold": 5
+    },
+    "P_tuning": 0.049702173284,
+    "csv": "results/search/laplace_12/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "laplace",
+      "sigma": 2,
+      "kernel": 3,
+      "threshold": 10
+    },
+    "P_tuning": 0.103493228201,
+    "csv": "results/search/laplace_13/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "laplace",
+      "sigma": 2,
+      "kernel": 3,
+      "threshold": 20
+    },
+    "P_tuning": 0.143393038398,
+    "csv": "results/search/laplace_14/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "laplace",
+      "sigma": 2,
+      "kernel": 3,
+      "threshold": 40
+    },
+    "P_tuning": 0.0328982666481,
+    "csv": "results/search/laplace_15/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "laplace",
+      "sigma": 2,
+      "kernel": 3,
+      "threshold": 80
+    },
+    "P_tuning": 2.276867031e-05,
+    "csv": "results/search/laplace_16/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "laplace",
+      "sigma": 2,
+      "kernel": 3,
+      "threshold": 120
+    },
+    "P_tuning": 0.0,
+    "csv": "results/search/laplace_17/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 0,
+      "kernel": 3,
+      "low": 20,
+      "high": 40
+    },
+    "P_tuning": 0.067154245581,
+    "csv": "results/search/canny_00/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 0,
+      "kernel": 3,
+      "low": 20,
+      "high": 60
+    },
+    "P_tuning": 0.073131493102,
+    "csv": "results/search/canny_01/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 0,
+      "kernel": 3,
+      "low": 40,
+      "high": 80
+    },
+    "P_tuning": 0.089751687655,
+    "csv": "results/search/canny_02/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 0,
+      "kernel": 3,
+      "low": 40,
+      "high": 120
+    },
+    "P_tuning": 0.098896190528,
+    "csv": "results/search/canny_03/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 0,
+      "kernel": 3,
+      "low": 60,
+      "high": 120
+    },
+    "P_tuning": 0.113412990017,
+    "csv": "results/search/canny_04/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 0,
+      "kernel": 3,
+      "low": 60,
+      "high": 180
+    },
+    "P_tuning": 0.129904169816,
+    "csv": "results/search/canny_05/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 0,
+      "kernel": 3,
+      "low": 80,
+      "high": 160
+    },
+    "P_tuning": 0.142727070512,
+    "csv": "results/search/canny_06/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 0,
+      "kernel": 3,
+      "low": 80,
+      "high": 240
+    },
+    "P_tuning": 0.17442578308099999,
+    "csv": "results/search/canny_07/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 0,
+      "kernel": 3,
+      "low": 120,
+      "high": 240
+    },
+    "P_tuning": 0.212876417479,
+    "csv": "results/search/canny_08/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 0,
+      "kernel": 3,
+      "low": 120,
+      "high": 360
+    },
+    "P_tuning": 0.247700837472,
+    "csv": "results/search/canny_09/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 0,
+      "kernel": 3,
+      "low": 160,
+      "high": 320
+    },
+    "P_tuning": 0.260797986954,
+    "csv": "results/search/canny_10/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 0,
+      "kernel": 3,
+      "low": 160,
+      "high": 480
+    },
+    "P_tuning": 0.22557080025,
+    "csv": "results/search/canny_11/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 1,
+      "kernel": 3,
+      "low": 20,
+      "high": 40
+    },
+    "P_tuning": 0.091897202707,
+    "csv": "results/search/canny_12/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 1,
+      "kernel": 3,
+      "low": 20,
+      "high": 60
+    },
+    "P_tuning": 0.105288601238,
+    "csv": "results/search/canny_13/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 1,
+      "kernel": 3,
+      "low": 40,
+      "high": 80
+    },
+    "P_tuning": 0.146814076602,
+    "csv": "results/search/canny_14/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 1,
+      "kernel": 3,
+      "low": 40,
+      "high": 120
+    },
+    "P_tuning": 0.179672457429,
+    "csv": "results/search/canny_15/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 1,
+      "kernel": 3,
+      "low": 60,
+      "high": 120
+    },
+    "P_tuning": 0.215841050737,
+    "csv": "results/search/canny_16/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 1,
+      "kernel": 3,
+      "low": 60,
+      "high": 180
+    },
+    "P_tuning": 0.26835070595,
+    "csv": "results/search/canny_17/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 1,
+      "kernel": 3,
+      "low": 80,
+      "high": 160
+    },
+    "P_tuning": 0.27371206102,
+    "csv": "results/search/canny_18/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 1,
+      "kernel": 3,
+      "low": 80,
+      "high": 240
+    },
+    "P_tuning": 0.28654473832,
+    "csv": "results/search/canny_19/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 1,
+      "kernel": 3,
+      "low": 120,
+      "high": 240
+    },
+    "P_tuning": 0.25912121799,
+    "csv": "results/search/canny_20/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 1,
+      "kernel": 3,
+      "low": 120,
+      "high": 360
+    },
+    "P_tuning": 0.129192207029,
+    "csv": "results/search/canny_21/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 1,
+      "kernel": 3,
+      "low": 160,
+      "high": 320
+    },
+    "P_tuning": 0.145961277675,
+    "csv": "results/search/canny_22/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 1,
+      "kernel": 3,
+      "low": 160,
+      "high": 480
+    },
+    "P_tuning": 0.007825518529,
+    "csv": "results/search/canny_23/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 2,
+      "kernel": 3,
+      "low": 20,
+      "high": 40
+    },
+    "P_tuning": 0.167806768274,
+    "csv": "results/search/canny_24/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 2,
+      "kernel": 3,
+      "low": 20,
+      "high": 60
+    },
+    "P_tuning": 0.21935710850200002,
+    "csv": "results/search/canny_25/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 2,
+      "kernel": 3,
+      "low": 40,
+      "high": 80
+    },
+    "P_tuning": 0.28685629111,
+    "csv": "results/search/canny_26/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 2,
+      "kernel": 3,
+      "low": 40,
+      "high": 120
+    },
+    "P_tuning": 0.29007047126,
+    "csv": "results/search/canny_27/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 2,
+      "kernel": 3,
+      "low": 60,
+      "high": 120
+    },
+    "P_tuning": 0.26829568681,
+    "csv": "results/search/canny_28/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 2,
+      "kernel": 3,
+      "low": 60,
+      "high": 180
+    },
+    "P_tuning": 0.166074664613,
+    "csv": "results/search/canny_29/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 2,
+      "kernel": 3,
+      "low": 80,
+      "high": 160
+    },
+    "P_tuning": 0.187284433503,
+    "csv": "results/search/canny_30/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 2,
+      "kernel": 3,
+      "low": 80,
+      "high": 240
+    },
+    "P_tuning": 0.068948811286,
+    "csv": "results/search/canny_31/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 2,
+      "kernel": 3,
+      "low": 120,
+      "high": 240
+    },
+    "P_tuning": 0.054239244496,
+    "csv": "results/search/canny_32/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 2,
+      "kernel": 3,
+      "low": 120,
+      "high": 360
+    },
+    "P_tuning": 0.0,
+    "csv": "results/search/canny_33/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 2,
+      "kernel": 3,
+      "low": 160,
+      "high": 320
+    },
+    "P_tuning": 0.0,
+    "csv": "results/search/canny_34/metrics.csv"
+  },
+  {
+    "parameters": {
+      "detector": "canny",
+      "sigma": 2,
+      "kernel": 3,
+      "low": 160,
+      "high": 480
+    },
+    "P_tuning": 0.0,
+    "csv": "results/search/canny_35/metrics.csv"
+  }
+]

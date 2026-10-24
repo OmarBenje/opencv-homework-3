@@ -1,0 +1,3 @@
+sobel: curseurs lus, traitement, rendu et PNG OK
+laplace: curseurs lus, traitement, rendu et PNG OK
+canny: curseurs lus, traitement, rendu et PNG OK

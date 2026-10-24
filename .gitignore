@@ -1,0 +1,11 @@
+/TP_contours/build/
+/TP_contours/.venv/
+/TP_contours/tmp/
+/TP_contours.zip
+__pycache__/
+.DS_Store
+*.pyc
+/TP_contours/data/contours.tar.gz
+/TP_contours/results/manual/
+/TP_contours/results/presentation_live_*/
+/TP_contours/results/presentation_batch_*/

@@ -1,0 +1,10 @@
+basket
+bear_4
+bear_8
+buffalo_2
+elephant_4
+gazelle_2
+goat_2
+goat_6
+hyena
+rino_3

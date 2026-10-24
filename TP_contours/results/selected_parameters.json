@@ -1,0 +1,21 @@
+{
+  "sobel": {
+    "detector": "sobel",
+    "sigma": 1,
+    "kernel": 3,
+    "threshold": 160
+  },
+  "laplace": {
+    "detector": "laplace",
+    "sigma": 2,
+    "kernel": 3,
+    "threshold": 20
+  },
+  "canny": {
+    "detector": "canny",
+    "sigma": 2,
+    "kernel": 3,
+    "low": 40,
+    "high": 120
+  }
+}
