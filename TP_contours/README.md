@@ -12,7 +12,7 @@ Programme C++17/OpenCV comparant Sobel, Laplace et Canny sur 40 images de Gronin
 - `results/all_metrics.csv` : 240 lignes = 40 images × 3 détecteurs × 2 tolérances.
 - `results/{sobel,laplace,canny}/` : cartes binaires, superpositions et CSV.
 - `results/search/`, `search.json`, `selected_parameters.json`, `summary.json` : recherche et résultats synthétiques.
-- `report/rapport.pdf` : rapport de quatre pages.
+- `report/rapport.pdf` : rapport de cinq pages.
 - `report/latex/` et `report/rapport-latex.zip` : sources LaTeX, images et logos.
 - `presentation/lancer_demo.command` et `executer_lot.command` : raccourcis de démonstration sur Mac.
 - `video/README.md` : modalités de transmission de la vidéo, fournie séparément par lien dans le courriel.
@@ -107,21 +107,18 @@ Le protocole compare 72 configurations sur 10 images, puis fige les paramètres 
 
 ## Reproduire et vérifier les résultats
 
-Le programme C++ n'a aucune dépendance Python. Les scripts de vérification et de rapport utilisent :
+Le programme C++ n'a aucune dépendance Python. Les trois commandes de la section « Traitement par lot » recalculent les cartes et les mesures avec les paramètres retenus. Les données sont déjà incluses.
+
+Les scripts auxiliaires de la campagne d'expérimentation et de préparation du rapport sont conservés localement et ne sont pas distribués dans ce dépôt. Leurs mentions dans le rapport et le compte rendu de validation décrivent les vérifications déjà réalisées.
+
+Pour compiler le rapport avec Tectonic :
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements-report.txt
-# Optionnel : les données sont déjà incluses.
-python scripts/download_data.py
-python scripts/run_experiments.py
-python scripts/validate_results.py
-python scripts/make_figures.py
-python scripts/make_report.py
+cd report/latex
+tectonic main.tex
 ```
 
-Le rapport nécessite Tectonic ou TeX Live. Le dossier `report/latex` peut également être importé dans Overleaf.
+Cette commande produit `main.pdf` dans le dossier LaTeX. Le dossier `report/latex` peut également être importé dans Overleaf.
 
 Contrôle des curseurs avec une session graphique :
 
@@ -129,13 +126,7 @@ Contrôle des curseurs avec une session graphique :
 ./build/contours --gui-check --output tmp/gui_check
 ```
 
-Ce test contrôle les curseurs, les trois détecteurs et les exports. Les données, les 240 mesures, les 120 cartes binaires et les 72 configurations sont vérifiées indépendamment par `validate_results.py`.
-
-Pour créer l'archive portable `TP_contours.zip` (sans binaire local ni fichiers temporaires) :
-
-```bash
-python3 scripts/package.py
-```
+Exécuter cette commande depuis `TP_contours`. Ce test contrôle les curseurs, les trois détecteurs et les exports. Le compte rendu des vérifications de la campagne fournie est dans `VALIDATION.md`.
 
 ## Sources
 

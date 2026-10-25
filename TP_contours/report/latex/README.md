@@ -22,8 +22,8 @@ latexmk -pdf main.tex
 Le projet est aussi compatible avec Overleaf : importer `rapport-latex.zip`, choisir `main.tex`
 comme document principal et compiler avec pdfLaTeX.
 
-Depuis la racine de TP_contours, `python3 scripts/make_report.py` compile cette source et met à jour
-`report/rapport.pdf` ainsi que l'archive des sources `report/rapport-latex.zip`.
+Les commandes ci-dessus produisent `main.pdf` dans ce dossier. La copie de remise est
+`report/rapport.pdf` et l'archive des sources est `report/rapport-latex.zip`.
 Les tableaux et commentaires correspondent aux résultats vérifiés de la campagne fournie.
 Après une nouvelle campagne différente, mettre à jour les chiffres du texte et les figures ensemble.
 
