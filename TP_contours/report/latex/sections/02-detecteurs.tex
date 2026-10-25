@@ -1,0 +1,18 @@
+\section{Détecteurs et paramètres OpenCV}
+\subsection{Prétraitement commun}
+\api{imread(..., IMREAD\_GRAYSCALE)} charge une image en niveaux de gris 8 bits. Un filtre \api{GaussianBlur} atténue le bruit et les textures : son écart-type $\sigma$ est réglable, avec un noyau de taille $2\lceil3\sigma\rceil+1$ et un bord réfléchi. Dans notre programme, $\sigma=0$ désactive le filtre. Un lissage fort réduit les réponses parasites, mais peut effacer des contours faibles.
+
+\subsection{Sobel : dérivées premières}
+Les appels \api{Sobel(..., CV\_32F, 1, 0, k)} et \api{Sobel(..., CV\_32F, 0, 1, k)} approchent les dérivées horizontale et verticale~\cite{sobel}. Leurs réponses sont combinées avec \api{magnitude}, puis seuillées :
+\[
+  G_x\simeq\frac{\partial I}{\partial x},\qquad
+  G_y\simeq\frac{\partial I}{\partial y},\qquad
+  E(x,y)=\mathbf{1}\!\left[\sqrt{G_x^2+G_y^2}>T\right].
+\]
+Le calcul flottant évite la saturation des dérivées. Le seuil $T$ porte sur la réponse brute, sans normalisation par image. Le noyau $k$ modifie le support et l'amplitude de la dérivée. Le seuillage simple peut donner des contours épais.
+
+\subsection{Laplace : dérivées secondes}
+\api{Laplacian(..., CV\_32F, k)} calcule $\Delta I=\partial^2 I/\partial x^2+\partial^2 I/\partial y^2$. Nous retenons les pixels pour lesquels $|\Delta I|>T$. Cette version détecte de fortes variations de courbure, mais peut produire des réponses de part et d'autre d'une transition. Elle est sensible au bruit. Il s'agit du \textbf{seuillage du module du Laplacien}, sans recherche des passages par zéro~\cite{laplace}.
+
+\subsection{Canny : amincissement et hystérésis}
+\api{Canny(image, contours, bas, haut, k, true)} calcule le gradient, supprime les non-maxima et applique une hystérésis~\cite{canny}. Les réponses fortes sont retenues ; celles entre les deux seuils doivent être reliées à un contour fort. \api{L2gradient=true} utilise la norme euclidienne. Le seuil bas règle les détails candidats, le seuil haut les points de départ fiables. Les contours obtenus sont généralement fins.

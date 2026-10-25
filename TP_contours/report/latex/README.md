@@ -1,7 +1,9 @@
-# Rapport court en LaTeX
+# Rapport LaTeX - modèle de Fribourg
 
-Source principale : `main.tex`. Les logos et figures sont inclus dans `images/`, afin que ce dossier
-soit autonome. Le rapport reprend les mesures du projet dans un format de quatre pages.
+Source principale : `main.tex`. Les huit sections sont dans `sections/`, la bibliographie dans
+`references.tex`, et les logos et figures dans `images/`. Ce dossier est autonome.
+Le rapport comporte cinq pages : titre, logos, résumé et sommaire en première page, puis les quatre
+pages de contenu scientifique du TP.
 
 ## Compiler
 
@@ -25,13 +27,22 @@ Depuis la racine de TP_contours, `python3 scripts/make_report.py` compile cette 
 Les tableaux et commentaires correspondent aux résultats vérifiés de la campagne fournie.
 Après une nouvelle campagne différente, mettre à jour les chiffres du texte et les figures ensemble.
 
-## Modèles consultés
+## Modèle et attribution
 
-- [Report Template, Mazen Amria, Overleaf](https://www.overleaf.com/latex/templates/report-template/bdbvpdswhjcg) : rapport universitaire fondé sur la classe `article`.
-- [Simple LaTeX Assignment/Report Template, Blake Rowden](https://github.com/blakerowden/university-latex-report-template) : organisation des informations du rapport.
+Cette mise en page est adaptée du modèle **Technical Report for Document Image Analysis (UniFR)**,
+créé par **Paul Märgner et Lars Vögtlin** pour l'Université de Fribourg.
 
-La mise en page a été écrite pour ce TP : typographie Latin Modern, titres bleus, tableaux booktabs,
-logos institutionnels en tête et pagination simple. Il ne s'agit pas d'un modèle officiel de l'école.
+- [Modèle et sources sur Overleaf](https://www.overleaf.com/latex/templates/technical-report-for-document-image-analysis-unifr/xhdkbqhhzmyw)
+- Licence du modèle : [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
+
+Éléments repris : classe `article` en 10 points, format A4, dimensions du texte, titre centré,
+résumé, sommaire, sections numérotées en noir et pagination simple.
+
+Adaptations : français, typographie Latin Modern, logos Polytech Marseille et AMU, absence de date,
+conservation des huit sections du TP, tableaux `booktabs` et figures existantes. Un résumé a été
+ajouté à partir du contenu du rapport. Le texte scientifique, les équations, les trois tableaux,
+les images et la bibliographie de la version précédente ont été conservés intégralement.
+Il ne s'agit pas d'un modèle officiel de Polytech Marseille.
 
 ## Logos
 

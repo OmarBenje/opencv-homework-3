@@ -1,0 +1,18 @@
+\section{Comparaison visuelle et interprétation}
+Canny obtient le plus de correspondances correctes et le moins de faux positifs : l'amincissement et l'hystérésis réduisent les contours épais et les réponses isolées. Il conserve néanmoins 121\,626 faux négatifs : de nombreuses limites annotées restent absentes. Son $TFN$ macro élevé n'est pas contradictoire avec un nombre total de $FN$ plus faible, car le dénominateur dépend du détecteur et les taux sont moyennés par image.
+
+Le classement change en position exacte : \textbf{Sobel passe légèrement devant Canny} ($0{,}124$ contre $0{,}117$). Les contours fins peuvent être décalés d'un pixel par rapport au tracé humain. La tolérance améliore particulièrement leur score ; elle doit donc être explicitée dans toute comparaison.
+
+\subsection{Deux scènes contrastées}
+\begin{center}
+\includegraphics[width=\linewidth]{gnu_comparison.png}
+\includegraphics[width=.83\linewidth]{gnu_errors.png}
+\captionof{figure}{Image \texttt{gnu} : original, référence et trois détecteurs ; puis superpositions. Vert : correct ; rouge : faux positif ; bleu : faux négatif.}
+\end{center}
+Sur \api{gnu}, les scores atteignent $0{,}299$ pour Sobel, $0{,}174$ pour Laplace et $0{,}500$ pour Canny. Ce dernier conserve une grande partie des limites de l'animal au premier plan, avec moins de réponses superflues.
+
+\begin{center}
+\includegraphics[width=\linewidth]{goat_5_comparison.png}
+\captionof{figure}{Image \texttt{goat\_5} : les paramètres globaux manquent une grande partie du contour annoté.}
+\end{center}
+À l'inverse, sur \api{goat\_5}, les scores sont seulement $0{,}035$, $0{,}017$ et $0{,}057$. Une bonne moyenne ne garantit donc pas une bonne détection sur chaque scène. La cible humaine peut inclure des limites peu contrastées que les dérivées locales révèlent mal.

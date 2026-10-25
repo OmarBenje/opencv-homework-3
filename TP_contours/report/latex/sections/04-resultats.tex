@@ -1,0 +1,24 @@
+\section{Résultats sur les 30 images de test}
+\begin{center}\small
+\begin{tabularx}{\linewidth}{l*{5}{>{\centering\arraybackslash}X}}
+\toprule
+\textbf{Détecteur} & \textbf{$P$ exact} & \textbf{$P$ 3$\times$3} & \textbf{$TFP$ 3$\times$3} & \textbf{$TFN$ 3$\times$3} & \textbf{$P$ micro} \\
+\midrule
+Sobel & 0,124 & 0,178 & 0,258 & 0,564 & 0,193 \\
+Laplace & 0,028 & 0,112 & 0,368 & 0,520 & 0,124 \\
+Canny & 0,117 & 0,257 & 0,133 & 0,610 & 0,266 \\
+\bottomrule
+\end{tabularx}
+\captionof{table}{Moyennes par image (macro). Le score micro utilise les comptages cumulés, avec tolérance $3\times3$.}
+\vspace{2mm}
+\begin{tabularx}{\linewidth}{l*{5}{>{\raggedleft\arraybackslash}X}}
+\toprule
+\textbf{Détecteur} & \textbf{$D$} & \textbf{$R$} & \textbf{$C$} & \textbf{$FP$} & \textbf{$FN$} \\
+\midrule
+Sobel & 126\,132 & 176\,529 & 49\,054 & 77\,078 & 127\,475 \\
+Laplace & 170\,041 & 176\,529 & 38\,297 & 131\,744 & 138\,232 \\
+Canny & 85\,099 & 176\,529 & 54\,903 & 30\,196 & 121\,626 \\
+\bottomrule
+\end{tabularx}
+\captionof{table}{Comptages cumulés sur les trente images, tolérance $3\times3$.}
+\end{center}

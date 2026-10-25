@@ -1,1 +1,1 @@
-Rapport LaTeX : compilation reussie, 4 pages, trois tableaux confrontes aux resultats, logos et figures inclus, rendu des quatre pages inspecte.
+Rapport LaTeX - mise en page Fribourg, 25 octobre 2026 : compilation reussie, 5 pages. Huit sections, equations, trois tableaux et bibliographie conserves integralement par comparaison des sources hors espaces et sauts de page ; empreintes des images et logos identiques. Resume et sommaire ajoutes, aucune date affichee. Rendu des cinq pages inspecte, texte, figures et tableaux lisibles.

@@ -1,0 +1,11 @@
+\section{Utilisation et vérification}
+Après compilation avec \api{bash build.sh}, \api{./build/contours -{}-gui} ouvre l'interface à curseurs. La touche \api{s} sauvegarde l'image et ses mesures, \api{b} traite le lot, \api{n/p} change d'image et \api{q} quitte.
+
+Exemple de traitement automatique avec les paramètres de Canny :
+\begin{quote}\small\ttfamily
+./build/contours -{}-batch -{}-detector canny -{}-sigma 2\\
+\hspace*{1em}-{}-low 40 -{}-high 120 -{}-save-images -{}-output results/canny
+\end{quote}
+Les mesures complètes sont dans \api{results/all\_metrics.csv} : 40 images, trois détecteurs et deux tolérances, soit 240 lignes. \api{scripts/run\_experiments.py} reproduit le protocole. La vidéo commentée est transmise séparément avec le courriel de remise.
+
+Les tests ont réussi sur macOS avec OpenCV 5.0.0 : cartes vides, décalages, double comptage et détecteurs. L'appariement a été comparé à une recherche exhaustive sur 150 petits graphes ; les CSV, les images et les curseurs ont également été contrôlés automatiquement.

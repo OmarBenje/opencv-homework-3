@@ -1,0 +1,33 @@
+\section{Méthode d'évaluation et protocole}
+\subsection{Comptages et tolérance géométrique}
+Les références de Groningen ont des contours noirs sur fond blanc. Elles sont inversées par un seuillage à 127 pour obtenir des cartes binaires cohérentes avec les sorties du programme. Les mesures utilisent la résolution originale.
+
+On note $D$ le nombre de pixels détectés, $R$ le nombre de pixels de référence et $C$ le nombre de correspondances correctes. Les mesures demandées sont :
+\begin{align*}
+  FP &= D-C, & FN &= R-C, & Z &= C+FP+FN,\\
+  P &= \frac{C}{Z}, & TFP &= \frac{FP}{Z}, & TFN &= \frac{FN}{Z}.
+\end{align*}
+Ces trois taux somment à 1. Le $TFP$ du sujet diffère du taux de classification $FP/(FP+VN)$. Si les deux cartes sont vides, nous fixons $P=1$ et $TFP=TFN=0$.
+
+En mode exact, les pixels doivent occuper la même position. En mode tolérant, une correspondance est admise dans un voisinage $3\times3$ : au plus un pixel de décalage par axe. Un \textbf{appariement maximum un à un} (Hopcroft--Karp) interdit de compter plusieurs détections pour une même référence et garantit $C\leq\min(D,R)$. Par exemple, deux détections proches d'une unique référence donnent $C=1$, $FP=1$, $FN=0$ et $P=0{,}5$.
+
+\subsection{Choix des paramètres}
+Les noms des images sont triés ; une image sur quatre est réservée au réglage, soit 10 images, et les 30 autres à l'évaluation. Nous comparons \textbf{72 configurations} sur les dix images de réglage, en maximisant la moyenne des $P$ avec tolérance $3\times3$. Le noyau est fixé à $k=3$ et $\sigma\in\{0,1,2\}$.
+\begin{itemize}
+  \item Sobel : $T\in\{10,20,40,80,120,160\}$ ; Laplace : $T\in\{5,10,20,40,80,120\}$.
+  \item Canny : seuil bas dans $\{20,40,60,80,120,160\}$, seuil haut égal à 2 ou 3 fois le seuil bas.
+\end{itemize}
+Les paramètres sélectionnés sont ensuite communs à toutes les images de test, sans réglage individuel à partir de leurs références.
+
+\begin{center}\small
+\begin{tabularx}{\linewidth}{lYrr}
+\toprule
+\textbf{Détecteur} & \textbf{Paramètres retenus} & \textbf{$P$ réglage} & \textbf{$P$ test} \\
+\midrule
+Sobel & $\sigma=1$, $k=3$, $T=160$ & 0,222 & 0,178 \\
+Laplace & $\sigma=2$, $k=3$, $T=20$ & 0,143 & 0,112 \\
+Canny & $\sigma=2$, $k=3$, bas $=40$, haut $=120$ & 0,290 & 0,257 \\
+\bottomrule
+\end{tabularx}
+\captionof{table}{Paramètres figés et performances moyennes avec tolérance $3\times3$.}
+\end{center}

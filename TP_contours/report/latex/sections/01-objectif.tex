@@ -1,0 +1,4 @@
+\section{Objectif et programme réalisé}
+L'objectif est de comparer trois détecteurs sur un lot d'images et de mesurer leur accord avec des contours tracés à la main. Le programme, écrit en \textbf{C++17 avec OpenCV}, propose une interface à curseurs pour choisir l'image, le détecteur et ses paramètres, ainsi qu'un mode par lot qui exporte les cartes de contours et les mesures au format CSV.
+
+La base de Groningen contient \textbf{40 images de $512\times512$ pixels et 40 références}~\cite{groningen}. Dix images servent au réglage, puis les paramètres sont figés pour les trente autres. Les mesures combinent une comparaison pixel à pixel et une comparaison tolérant un décalage d'un pixel.

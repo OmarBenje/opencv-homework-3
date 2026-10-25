@@ -1,0 +1,10 @@
+\section{Influence des paramètres et limites}
+\begin{center}
+\includegraphics[width=.86\linewidth]{sensitivity.png}
+\captionof{figure}{Sensibilité sur les dix images de réglage. Pour Canny, la figure montre le seuil haut égal à trois fois le seuil bas.}
+\end{center}
+Un seuil faible conserve des détails mais augmente les faux positifs, notamment dans les textures. Un seuil élevé supprime ces réponses et peut manquer de vrais contours. Le lissage réduit les oscillations, tout en modifiant la localisation et l'intensité des dérivées. Les valeurs numériques des seuils ne sont donc pas directement comparables entre détecteurs.
+
+Pour Sobel, le meilleur seuil testé ($T=160$) est en bordure de grille : une recherche élargie pourrait améliorer le résultat. Les noyaux 5 et 7 sont disponibles dans l'interface, mais le protocole garde $k=3$. La séparation 10/30 est unique et certaines familles de scènes apparaissent dans les deux groupes : elle ne démontre pas une généralisation à d'autres types d'images.
+
+La tolérance $3\times3$ absorbe les petits décalages, mais peut aussi accepter une texture voisine. L'appariement maximise le nombre de couples sans minimiser leur distance. La mesure ignore la continuité et le sens des contours. Enfin, une seule annotation humaine est disponible par image : une variation réelle non annotée est comptée comme faux positif.
